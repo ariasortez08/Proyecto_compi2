@@ -1,0 +1,15 @@
+
+program whiles;
+var
+  x, y, i, j, lenght: integer;
+begin
+    lenght := 2;
+    x := 5;
+    y := 5;
+
+    While (x > lenght ) Do
+    Begin
+        write(x);
+        x := x - 1;
+    End;
+end.

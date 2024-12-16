@@ -1,0 +1,23 @@
+program writes;
+var
+  x, y, i, j,cont, lenght: integer;
+  arreglo:Array[1..50] of Integer;
+  arreglo_bidi: Array[1..10,1..5] of Integer;
+begin
+    lenght := 2;
+    x := 10;
+    y := 5;
+    cont := 1;
+
+    arreglo_bidi[1,3] := 5;
+    arreglo[1] := 5;
+
+    writeln('arreglo bidi = ', arreglo_bidi[1,3]);
+    writeln('arreglo = ',arreglo[1]);
+    writeln('arreglo = ',arreglo[x]);
+    write('arreglo = ',arreglo[x]);
+    write('arreglo[%d] = ',cont);
+     writeln('El valor de x es: ', x);
+    writeln(x);
+    writeln('hola mundo');
+end.

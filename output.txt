@@ -1,0 +1,9 @@
+program mirian;
+var x:integer;
+    y:boolean;
+Function f():integer;
+begin
+end;
+begin
+  x:=1;
+end.

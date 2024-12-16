@@ -1,0 +1,40 @@
+program ciclos;
+{declaramos las variables}
+var lenght,i,j,x,y,cont:Integer;
+arreglo:Array[1..50] of Integer;
+arreglo_bidi: Array[1..10,1..5] of Integer;
+s:String;
+Function f():Integer;
+Begin
+f := 3;
+end;
+begin
+lenght := 50;
+x := 10;
+y := 5;
+cont := 1;
+For i := x Downto 1 Do
+Begin
+    For j := y Downto 1 Do
+    begin
+        arreglo_bidi[i,j] := ( cont + ( x - y ) + 5) mod 15;
+    end;
+end;
+    cont := 1;
+    For i := 1 To x Do
+    begin
+        For j := 1 To y Do
+        Begin
+            arreglo[cont] := arreglo_bidi[i,j];
+            cont := ( cont + 1 ) ;
+        End;
+    end;
+    cont := 1;
+    While ( cont <> lenght+1 ) Do
+    Begin
+        write('arreglo[%d] = ',cont);
+        writeln('%d',arreglo[cont]);
+        cont := ( cont + 1 ) ;
+    End;
+    writeln('Gracias por usar Pascal!');
+end.

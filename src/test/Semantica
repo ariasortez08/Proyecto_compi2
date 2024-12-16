@@ -1,0 +1,41 @@
+program Semantic;
+var x,y,i,j:integer;
+bool:boolean;
+Function f():Integer;
+Begin
+f := 3;
+end;
+Function f():Integer;
+Begin
+f := 3;
+end;
+Function suma(var x,y:integer):Integer;
+Begin
+suma := 3;
+end;
+begin
+    x := true;
+    y := bool;
+    h := 0 ;
+    f();
+end.
+
+
+//otro para ver lo de semantica [ara parametros de funciones
+program Semantic;
+var x,y,i,j:integer;
+bool:boolean;
+Function f():Integer;
+Begin
+f := 3;
+end;
+Function suma(var x,y:integer):Integer;
+Begin
+suma := 3;
+end;
+begin
+    x := 5;
+    y := 9;
+    f();
+    suma(x,y);
+end.

@@ -1,0 +1,15 @@
+program fors;
+var x,y,i,j:integer;
+begin
+    x :=10;
+    y:= 5;
+    For i := x Downto 1 Do
+    Begin
+        writeln(x);
+    End;
+
+    For j := 1 To y Do
+    Begin
+        writeln(j);
+    End;
+end.

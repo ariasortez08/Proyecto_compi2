@@ -1,0 +1,11 @@
+program reads;
+var
+  x, y, i, j, lenght: integer;
+begin
+    lenght := 50;
+    x := 1;
+    y := 5;
+
+    read(x);
+    writeln('el valor ingresado es: ',x);
+end.

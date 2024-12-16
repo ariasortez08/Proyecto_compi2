@@ -1,0 +1,22 @@
+program ifs;
+var
+  x, y, i, j, lenght: integer;
+  z,b:boolean;
+begin
+    lenght := 50;
+    x := 1;
+    y := 5;
+
+    if x > 0 then
+        writeln(x);
+    else
+        writeln(y);
+
+    if x = 1 then
+    begin
+      writeln(y);
+    end;
+
+    if x = 2 then
+        writeln('hola');
+end.
