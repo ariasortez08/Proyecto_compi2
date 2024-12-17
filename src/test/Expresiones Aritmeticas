@@ -14,7 +14,7 @@ begin
   writeln('Expresion 1 ((x + y) * z): ', x);
 
   { 2. División y resta en un solo paso }
-  x := (x div y) - z;
+  x := (x / y) - z;
   writeln('Expresion 2 ((x div y) - z): ', x);
 
   { 3. Potencialización simulada con multiplicación repetida }
@@ -26,11 +26,11 @@ begin
   writeln('Expresion 4 ((x mod z) + (y * w)): ', x);
 
   { 5. Operación anidada con varias divisiones }
-  x := (x + 15) div ((y div w) + 1);
+  x := (x + 15) / ((y / w) + 1);
   writeln('Expresion 5 ((x + 15) div ((y div w) + 1)): ', x);
 
   { 6. Uso de paréntesis múltiples y operaciones combinadas }
-  x := ((x * 2) - (y * z)) div w;
+  x := ((x * 2) - (y * z)) / w;
   writeln('Expresion 6 (((x * 2) - (y * z)) div w): ', x);
 
   { 7. Operación mixta con suma, resta y módulo }
@@ -42,10 +42,10 @@ begin
   writeln('Expresion 8 ((x + z * w) mod (y + z)): ', x);
 
   { 9. Operación compleja con varios niveles }
-  x := (((x + z) * (y - w)) div z) + (w mod 3);
+  x := (((x + z) * (y - w)) / z) + (w mod 3);
   writeln('Expresion 9 ((((x + z) * (y - w)) div z) + (w mod 3)): ', x);
 
   { 10. Expresión final con múltiples combinaciones }
-  x := (x * 3 + (z - w) * 2) div ((y + 1) mod 3 + 1);
+  x := (x * 3 + (z - w) * 2) / ((y + 1) mod 3 + 1);
   writeln('Expresion 10 ((x * 3 + (z - w) * 2) div ((y + 1) mod 3 + 1)): ', x);
 end.
